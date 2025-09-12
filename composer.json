@@ -11,5 +11,44 @@
 	},
 	"require": {
         "scavix/wdf-core": "^1.0.0"
-	}
+	},
+    "extra":
+    {
+        "externals":
+        [
+            {
+                "name": "D3js",
+                "version": "3.5.15",
+                "homepage": "https://d3js.org/",
+                "description": "JavaScript library for manipulating documents based on data",
+                "license": "ISC",
+                "files":
+                {
+                    "res/d3.min.js": "https://unpkg.com/d3@3.5.15/d3.min.js"
+                }
+            },
+            {
+                "name": "DataMaps",
+                "version": "0.5.9",
+                "homepage": "https://datamaps.github.io/",
+                "description": "Customizable SVG map visualizations for the web in a single Javascript file using D3.js",
+                "license": "MIT",
+                "files":
+                {
+                    "res/datamaps.world.min.js": "https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.min.js"
+                }
+            },
+            {
+                "name": "TopoJSON",
+                "version": "3.0.2",
+                "homepage": "https://github.com/topojson/topojson",
+                "description": "TopoJSON is an extension of GeoJSON that encodes topology. Rather than representing geometries discretely, geometries in TopoJSON files are stitched together from shared line segments called arcs.",
+                "license": "MIT",
+                "files":
+                {
+                    "res/topojson.min.js": "https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"
+                }
+            }
+        ]
+    }
 }
