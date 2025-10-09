@@ -25,14 +25,14 @@
 namespace ScavixWDF\Controls;
 
 use ScavixWDF\Base\Control;
+use ScavixWDF\Reflection\Attributes\Resource;
 
 /**
  * Datamap wrapper for https://github.com/markmarkoh/datamaps
- *
- * @attribute[Resource('d3.min.js')]
- * @attribute[Resource('topojson.min.js')]
- * @attribute[Resource('datamaps.world.min.js')]
  */
+#[Resource('datamap/d3.min.js')]
+#[Resource('datamap/topojson.min.js')]
+#[Resource('datamap/datamaps.world.min.js')]
 class Datamap extends Control
 {
     protected $map_title, $canvas, $colorRange;
