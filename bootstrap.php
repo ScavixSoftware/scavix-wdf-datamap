@@ -35,6 +35,5 @@ Wdf::RegisterPackage('datamap', 'datamap_init');
  */
 function datamap_init()
 {
-    classpath_add(__DIR__ . '/lib');
     add_wdfresource_dir(__DIR__ . '/res');
 }
